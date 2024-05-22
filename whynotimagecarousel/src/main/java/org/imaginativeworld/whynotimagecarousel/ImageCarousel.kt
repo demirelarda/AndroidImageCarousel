@@ -278,6 +278,12 @@ class ImageCarousel(
             tvCaption.setTextSize(TypedValue.COMPLEX_UNIT_PX, captionTextSize.toFloat())
         }
 
+    var captionTextColor: Int = Color.WHITE
+        set(value){
+            field = value
+            tvCaption.setTextColor(field)
+        }
+
     var showIndicator = false
         set(value) {
             field = value
@@ -661,6 +667,12 @@ class ImageCarousel(
                         R.styleable.ImageCarousel_captionTextSize,
                         14.spToPx(context).toFloat(),
                     ).toInt()
+
+                captionTextColor =
+                    getColor(
+                        R.styleable.ImageCarousel_captionTextColor,
+                        Color.WHITE
+                    )
 
                 carouselType =
                     carouselTypeArray[

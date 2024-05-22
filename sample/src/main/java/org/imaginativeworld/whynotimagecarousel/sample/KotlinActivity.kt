@@ -73,6 +73,7 @@ class KotlinActivity : AppCompatActivity() {
             showCaption = true
             captionMargin = 0.dpToPx(context) // px value of dp
             captionTextSize = 14.spToPx(context) // px value of sp
+            captionTextColor = Color.WHITE
 
             showIndicator = true
             indicatorMargin = 0.dpToPx(context) // px value of dp

@@ -69,6 +69,7 @@ public class SampleFragment extends Fragment {
         binding.carousel.setShowCaption(true);
         binding.carousel.setCaptionMargin(Utils.dpToPx(8, context)); // px value of dp
         binding.carousel.setCaptionTextSize(Utils.spToPx(16, context)); // px value of sp
+        binding.carousel.setCaptionTextColor(Color.WHITE);
 
         binding.carousel.setShowIndicator(false);
         binding.carousel.setIndicatorMargin(Utils.dpToPx(0, context)); // px value of dp
